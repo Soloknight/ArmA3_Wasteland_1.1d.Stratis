@@ -8,9 +8,12 @@
 
 if (!hasInterface) exitWith {};
 
-if !(player diarySubjectExists "rules") then
+/* if !(player diarySubjectExists "rules") then
 {
 	waitUntil {player diarySubjectExists "credits"};
 	player createDiarySubject ["rules", "Custom Controls"];
 	player createDiaryRecord ["rules", ["Mappings", _this select 0]];
 };
+
+*/
+

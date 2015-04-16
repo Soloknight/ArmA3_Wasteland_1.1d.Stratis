@@ -22,15 +22,17 @@ MainMissions =
 
 SideMissions =
 [
-	["mission_HostileHelicopter", 1],
-	["mission_HostileJet", 1],
+	["mission_HostileHelicopter", 0.75],
+	["mission_HostileJet", 0.75],
 	["mission_MiniConvoy", 1],
 	["mission_Outpost", 1],
 	["mission_Truck", 1],
-	["mission_HostileInfantry", 1],
+	["mission_HostileInfantry", 0.50],
 	["mission_Sniper", 1] ,
 	["mission_Roadblock", 1],
-	["mission_AirWreck", 1]
+	["mission_AirWreck", 1],
+	["mission_geoCache", 1]
+
 
 ];
 

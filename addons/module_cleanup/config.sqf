@@ -32,8 +32,8 @@ pvpfw_cleanUp_bodyTimer = 600; // Bodies will be removed after the specified amo
 // weapons/magazines on ground //
 /////////////////////////////////
 #define __pvpfw_cleanUp_cleanWeaponHolders //comment out this line if you dont want weaponHolders to be cleaned up
-pvpfw_cleanUp_weaponHolderRadius = 5; // The weaponholders cleanup countdown will start if no unit is closer than this
-pvpfw_cleanUp_weaponHolderTimer = 10; // Weaponholders will be deleted after this time
+pvpfw_cleanUp_weaponHolderRadius = 50; // The weaponholders cleanup countdown will start if no unit is closer than this
+pvpfw_cleanUp_weaponHolderTimer = 600; // Weaponholders will be deleted after this time
 
 ///////////////////////////////
 // Clean destroyed buildings //

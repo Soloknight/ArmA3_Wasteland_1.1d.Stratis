@@ -130,7 +130,7 @@ while {true} do{
 				#ifdef __pvpfw_cleanUp_cleanWeaponHolders
 				case(_type in ["GroundWeaponHolder","WeaponHolderSimulated"]):{
 					_delay = 0.05;
-					_nearEntities = (getPosATL _x) nearEntities [["CAManBase"],pvpfw_cleanUp_weaponHolderRadius];
+					_nearEntities = (getPosATL _x) nearEntities [[""],pvpfw_cleanUp_weaponHolderRadius];
 					if (count _nearEntities == 0) then{
 						_cleanupInitTime = _x getVariable["pvpfw_cleanup_InitTime",0];
 						

@@ -8,18 +8,24 @@ if (!hasInterface) exitWith {};
 waitUntil {!isNull player};
 
 player createDiarySubject ["changelog", "Changelog"];
+player createDiarySubject ["addons", "Addons"];
+player createDiarySubject ["controls", "Custom Controls"];
 player createDiarySubject ["credits", "Credits"];
+
 
 
 player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
-<br/> [New*] Added DLC Weapons ( Testing )
+<br/> [New*] Video settings action moved to player menu
+<br/> [New*] High Value Target Bounty !
+<br/> [New*] Minor fixes and performance improvements
+<br/> [New*] GID Object system  test
+<br/> [New*] Added DLC Weapons
 <br/> [New*] Improved Server Cleanup
 <br/> [Added] License Vehicle 
 <br/> [Reduced] Concurrent active missions to 4
-<br/> [Improved] Server Cleanup
 <br/> [Removed] Food/Water/Repair Kit at spawn
 <br/> [Removed] Insurgent Easter Egg
 <br/> [Removed] Crappy vehicle textures
@@ -28,6 +34,33 @@ player createDiaryRecord ["changelog",
 <br/> [Added] Explosive Specialist Class
 <br/> [Added] Insurgent Class
 
+"
+]];
+
+player createDiaryRecord ["addons",
+[
+"Supported Client Addons",
+"
+<br/> JSRS 3.0 DragonFyre Sound Mod
+<br/> Blastcore Phoenix
+<br/> LSD Fullscreen Adjustable Nightvision
+<br/> Midrange Texture Replacement Pack
+<br/> Community Base Addons RC4 and RC6
+<br/> VTS Weapon Resting
+<br/> Jump on teamspeak or head over to http://www.gamersinc.co.za for download links!
+"
+]];
+
+
+player createDiaryRecord ["controls",
+[
+"Set your custom controls",
+"
+<br/>GamersInc. Wasteland Custom Controls 
+<br/>Go to configure -> Controls -> Show: Custom Controls and set.
+<br/>Custom Control 1 = Earplugs 
+<br/>Custom Control 2 = Emergency Eject
+<br/>Custom Control 3 = Jump over / Parachute open/cut
 "
 ]];
 

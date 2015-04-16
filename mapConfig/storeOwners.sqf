@@ -18,12 +18,12 @@ storeOwnerConfig = compileFinal str
 	["GunStore2", 1, [138,0.25], []],
 	["GunStore3", 4, [130,0.25], []],
 	["GunStore4", 3, [209,0.25], []],
-	["GunStore5", 0, [170,0.25], []],
+	["GunStore5", 1, [330,0.25], []],
 
 	["VehStore1", 0, [195,0.25], ["Planes"]],
 	["VehStore2", 2, [285,0.25], ["Boats"]],
 	["VehStore3", 1, [245,0.25], ["Planes"]],
-	["VehStore4", 1, [175,0.25], ["Planes"]],
+	["VehStore4", 1, [135,0.25], ["Planes"]],
 	["VehStore5", 1, [130,0.25], ["Planes","Boats"]]
 	
 ];

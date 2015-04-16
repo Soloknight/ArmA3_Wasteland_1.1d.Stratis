@@ -54,6 +54,11 @@ if (!isNil "client_initEH") then { player removeEventHandler ["Respawn", client_
 player addEventHandler ["Respawn", { _this spawn onRespawn }];
 player addEventHandler ["Killed", { _this spawn onKilled }];
 
+
+
+
+
+
 A3W_scriptThreads pushBack execVM "client\functions\evalManagedActions.sqf";
 
 pvar_playerRespawn = player;
@@ -145,6 +150,9 @@ call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 		_x setVariable ["side", playerSide, true];
 	};
 } forEach pvar_spawn_beacons;
+
+{ _x call A3W_fnc_setupAntiExplode } forEach allMissionObjects "Air";
+{ _x call A3W_fnc_setupAntiExplode } forEach allMissionObjects "LandVehicle";
 
 {
 	{

@@ -284,9 +284,9 @@ accessoriesArray = compileFinal str
 	["Kahlia (Tan)", "optic_KHS_tan", 300, "item"], // DLC Item
 	["LRPS", "optic_LRPS", 500, "item"],
 	["NVS", "optic_NVS", 2500, "item"],
-	["TWS", "optic_tws", 7500, "item"],
-	["TWS MG", "optic_tws_mg", 8500, "item"],
-	["Nightstalker", "optic_Nightstalker", 10000, "item"]
+	["TWS", "optic_tws", 60000, "item"],
+	["TWS MG", "optic_tws_mg", 50000, "item"],
+	["Nightstalker", "optic_Nightstalker", 70000, "item"]
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat

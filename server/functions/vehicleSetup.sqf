@@ -64,6 +64,13 @@ _vehicle addEventHandler ["Killed",
 	};
 }];
 
+if ({_class isKindOf _x} count ["Air","LandVehicle"] > 0) then
+{
+	[netId _vehicle, "A3W_fnc_setupAntiExplode", true] call A3W_fnc_MP;
+};
+
+
+
 // Vehicle customization
 switch (true) do
 {

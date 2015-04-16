@@ -16,6 +16,7 @@ _rscLayer cutRsc["osefStatusBar","PLAIN"];
 	sleep 5;
 	_counter = 180;
 	_timeSinceLastUpdate = 0;
+	
 	while {true} do
 	{
 		sleep 1;
@@ -23,21 +24,8 @@ _rscLayer cutRsc["osefStatusBar","PLAIN"];
 		_time = (round(180-(serverTime)/60));  //edit the '240' (60*4=240) to change the countdown timer if your server restarts are shorter or longer than 4 hour intervals
 		_hours = (floor(_time/60));
 		_minutes = (_time - (_hours * 60));
+	
 		
-		switch(_minutes) do
-	{
-		case 9: {_minutes = "09"};
-		case 8: {_minutes = "08"};
-		case 7: {_minutes = "07"};
-		case 6: {_minutes = "06"};
-		case 5: {_minutes = "05"};
-		case 4: {_minutes = "04"};
-		case 3: {_minutes = "03"};
-		case 2: {_minutes = "02"};
-		case 1: {_minutes = "01"};
-		case 0: {_minutes = "00"};
-	};
-		
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["TS.GAMERSINC.CO.ZA | PLAYERS ONLINE: %2 | AVERAGE FPS: %1", round diag_fps, count playableUnits];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["TS.GAMERSINC.CO.ZA | PLAYERS ALIVE: %2 | AVERAGE FPS: %1", round diag_fps, count playableUnits];
 	}; 
 };

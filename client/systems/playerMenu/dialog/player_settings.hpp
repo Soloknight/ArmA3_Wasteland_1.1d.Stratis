@@ -46,14 +46,14 @@ class playerSettings {
 
 		class waterIcon : w_RscPicture {
 			idc = -1;
-			text = "client\icons\water.paa";
+			text = "client\icons\energydrink.paa";
 			x = 0.022; y = 0.2;
 			w = 0.04 / (4/3); h = 0.04;
 		};
 
 		class foodIcon : w_RscPicture {
 			idc = -1;
-			text = "client\icons\food.paa";
+			text = "client\icons\cannedfood.paa";
 			x = 0.022; y = 0.26;
 			w = 0.04 / (4/3); h = 0.04;
 		};
@@ -88,7 +88,7 @@ class playerSettings {
 			x = 0.06; y = 0.313;
 			w = 0.3; h = 0.05;
 		};
-
+		
 		class distanceText : w_RscText {
 			idc = view_range_text;
 			text = "View range:";
@@ -159,11 +159,11 @@ class playerSettings {
 			x = 0.158; y = 0.66;
 			w = 0.225; h = 0.033 * safezoneH;
 		};
-
+		
 		class btnDistanceNear : w_RscButton {
 			idc = -1;
 			text = "Near";
-			onButtonClick = "setViewDistance 1100;";
+			onButtonClick = "setViewDistance 1200; setObjectViewDistance 900; setTerrainGrid 45;";
 			x = 0.02; y = 0.43;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
@@ -171,7 +171,7 @@ class playerSettings {
 		class btnDistanceMedium : w_RscButton {
 			idc = -1;
 			text = "Medium";
-			onButtonClick = "setViewDistance 2200;";
+			onButtonClick = "setViewDistance 2000; setObjectViewDistance 1500; setTerrainGrid 35;";
 			x = 0.02; y = 0.5;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
@@ -179,8 +179,16 @@ class playerSettings {
 		class btnDistanceFar : w_RscButton {
 			idc = -1;
 			text = "Far";
-			onButtonClick = "setViewDistance 3300;";
+			onButtonClick = "setViewDistance 5000; setObjectViewDistance 3500; setTerrainGrid 25;";
 			x = 0.02; y = 0.57;
+			w = 0.125; h = 0.033 * safezoneH;
+		};
+		
+		class btnDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "Custom";
+			onButtonClick = "[] execVM 'addons\taw_vd\fn_openTAWVD.sqf'";
+			x = 0.158; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
 
@@ -190,5 +198,6 @@ class playerSettings {
 			x = 0.02; y = 0.60;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
+
 	};
 };

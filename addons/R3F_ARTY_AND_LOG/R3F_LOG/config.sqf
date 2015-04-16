@@ -94,8 +94,11 @@ R3F_LOG_CFG_transporteurs =
 
 R3F_LOG_CFG_objets_transportables =
 [
+	["Static_Designator_01_base_F", 2],
+	["Static_Designator_02_base_F", 2],
 	["StaticWeapon", 5],
 	["Box_NATO_AmmoVeh_F", 10],
+	["Box_IND_AmmoVeh_F", 10],
 	["B_supplyCrate_F", 5],
 	["Land_LampHalogen_F",2],
 	["ReammoBox_F", 3],

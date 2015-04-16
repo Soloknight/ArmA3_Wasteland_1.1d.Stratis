@@ -32,6 +32,7 @@ A3W_scriptThreads = [];
 [] execVM "storeConfig.sqf"; // Separated as its now v large
 [] execVM "briefing.sqf";
 
+
 if (!isDedicated) then
 {
 	[] spawn
@@ -79,4 +80,6 @@ if (isServer) then
 [] execVM "addons\laptop\init.sqf";		 // hack Laptop mission addon
 [] execVM "addons\safezone\safezone.sqf"; //safezones
 [] execVM "addons\vactions\functions.sqf"; //vehicle actions
+[] execVM "addons\HvT\HvT.sqf"; // High Value Target
 nul = [] execVM "addons\3Dmarkers\3Dmarkers.sqf"; // 3dmarkers
+if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; // GID

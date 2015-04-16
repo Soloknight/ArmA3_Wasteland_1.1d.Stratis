@@ -14,9 +14,9 @@ while {true} do
 	if(!alive player) then
 	{
 		_old = player;
-		_old removeAction tawvd_action;
+		//_old removeAction tawvd_action;
 		waitUntil {alive player};
-		tawvd_action = player addAction["<img image='client\icons\gpu.paa'/> Video Settings",TAWVD_fnc_openTAWVD,[],-99,false,false,"",''];
+		//tawvd_action = player addAction["<img image='client\icons\gpu.paa'/> Video Settings",TAWVD_fnc_openTAWVD,[],-99,false,false,"",''];
 	};
 	[] call TAWVD_fnc_updateViewDistance;
 	waitUntil {_recorded != vehicle player || !alive player};

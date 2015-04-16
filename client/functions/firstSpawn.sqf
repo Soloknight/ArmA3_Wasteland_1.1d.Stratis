@@ -12,19 +12,17 @@ client_firstSpawn = true;
 // [] execVM "addons\whitelist\whitelist.sqf";
 
 // display server watermark
-["<img size='3' shadow = 0 image='mapConfig\logo.paa'/>",(safezoneH- 0.9),-(safezoneW-1.68),99999999,0,0,3054] spawn bis_fnc_dynamicText;
+["<img size='2' shadow = 0 image='mapConfig\logo.paa'/>",(safezoneH- 0.90),-(safezoneW-1.72),99999999,0,0,3054] spawn bis_fnc_dynamicText;
 
 //set client side view distance on spawn
 systemChat format["Optimizing Video Settings"];
-setViewDistance 900;
+setViewDistance 1200;
 setObjectViewDistance 900;
 setTerrainGrid 45;
 
 
 [] execVM "addons\credits\welcomeMessage.sqf";
-
-//play intro sound
- //playsound "kickass"; 
+ 
 
 player addEventHandler ["Take",
 {
@@ -35,7 +33,7 @@ player addEventHandler ["Take",
 		_vehicle setVariable ["itemTakenFromVehicle", true, true];
 	};
 }];
-
+			
 player addEventHandler ["Put",
 {
 	_vehicle = _this select 1;
