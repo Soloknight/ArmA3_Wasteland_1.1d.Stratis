@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: mission_geoCache.sqf
-//	@file Author: [404] Deadbeat, [404] Costlyy, AgentRev
+//	@file Author: [404] Deadbeat, [404] Costlyy, AgentRev, edit by CRE4MPIE
 //	@file Created: 08/12/2012 15:19
 
 if (!isServer) exitwith {};
@@ -35,7 +35,7 @@ _randomBox = ["mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"
 	
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1];
 
-	_missionHintText = "an Abandoned GeoCache has been marked on the map - get there first and it's and it's yours !";
+	_missionHintText = "an Abandoned GeoCache has been marked on the map - get there first and it's yours !";
 
 };
 
