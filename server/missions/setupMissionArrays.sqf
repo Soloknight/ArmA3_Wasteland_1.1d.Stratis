@@ -33,7 +33,6 @@ SideMissions =
 	["mission_AirWreck", 1],
 	["mission_geoCache", 1]
 
-
 ];
 
 MoneyMissions =
