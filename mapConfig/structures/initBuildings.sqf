@@ -6,6 +6,7 @@
 
 */
 
-#include "NisiBay.sqf"
-#include "agiaGunstore.sqf"
-//#include "infomarkers.sqf"
+#include "Nisi.sqf"
+#include "GunstoreAgia.sqf"
+#include "Ruins.sqf"
+#include "Random.sqf"
