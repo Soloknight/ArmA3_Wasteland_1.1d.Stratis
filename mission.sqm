@@ -1892,7 +1892,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1016;
+		items=1014;
 		class Item0
 		{
 			position[]={2291.26,0,1121.16};
@@ -12744,28 +12744,6 @@ class Mission
 			vehicle="Land_Crane_F";
 			skill=0.40000001;
 			init="this setPos [ getPos this select 0, getPos this select 1, 0];this setVectorUp[0,-0,0.5];this setVariable [""R3F_LOG_disabled"", true]";
-		};
-		class Item1014
-		{
-			position[]={2472.0955,73.721687,5683.7437};
-			azimut=-56.062801;
-			offsetY=-0.5;
-			id=1172;
-			side="EMPTY";
-			vehicle="Land_Billboard_F";
-			skill=0.40000001;
-			init="this setPos [ getPos this select 0, getPos this select 1, -1];this setVectorUp[0,-0,0.5];this enableSimulation false; this allowDamage false;this SetObjectTexture [0,""mapconfig\img\bill1.jpg""];";
-		};
-		class Item1015
-		{
-			position[]={2463.2734,73.785393,5668.7197};
-			azimut=-60.3922;
-			offsetY=-0.5;
-			id=1173;
-			side="EMPTY";
-			vehicle="Land_Billboard_F";
-			skill=0.40000001;
-			init="this setPos [ getPos this select 0, getPos this select 1, -1];this setVectorUp[0,-0,0.5];this enableSimulation false; this allowDamage false;this SetObjectTexture [0,""mapconfig\img\bill2.jpg""];";
 		};
 	};
 	class Markers
