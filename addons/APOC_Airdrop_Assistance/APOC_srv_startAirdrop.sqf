@@ -64,7 +64,7 @@ _crew allowDamage false;
 
 _heli setCaptive true;
 
-_heliDistance = 10000;
+_heliDistance = 2500;
 _dir = ((_dropSpot select 0) - (_spos select 0)) atan2 ((_dropSpot select 1) - (_spos select 1));
 _flySpot = [(_dropSpot select 0) + (sin _dir) * _heliDistance, (_dropSpot select 1) + (cos _dir) * _heliDistance, _flyHeight];
 
