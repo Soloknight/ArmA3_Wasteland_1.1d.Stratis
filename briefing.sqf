@@ -8,8 +8,7 @@ if (!hasInterface) exitWith {};
 waitUntil {!isNull player};
 
 player createDiarySubject ["changelog", "Changelog"];
-player createDiarySubject ["addons", "Addons"];
-player createDiarySubject ["controls", "Custom Controls"];
+player createDiarySubject ["addons", "Supported Addons"];
 player createDiarySubject ["credits", "Credits"];
 
 
@@ -18,6 +17,7 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [New*] Streamlined HUD and server cleanup
 <br/> [New*] Video settings action moved to player menu
 <br/> [New*] High Value Target Bounty !
 <br/> [New*] Minor fixes and performance improvements
@@ -51,18 +51,6 @@ player createDiaryRecord ["addons",
 "
 ]];
 
-
-player createDiaryRecord ["controls",
-[
-"Set your custom controls",
-"
-<br/>GamersInc. Wasteland Custom Controls 
-<br/>Go to configure -> Controls -> Show: Custom Controls and set.
-<br/>Custom Control 1 = Earplugs 
-<br/>Custom Control 2 = Emergency Eject
-<br/>Custom Control 3 = Jump over / Parachute open/cut
-"
-]];
 
 player createDiaryRecord ["credits",
 [

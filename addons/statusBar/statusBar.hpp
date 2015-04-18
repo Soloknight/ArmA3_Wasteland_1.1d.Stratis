@@ -14,7 +14,7 @@ class osefStatusBar {
 	class controls {
 		class statusBarText {
 			idc = 1000;
-			x = safezoneX + safezoneW - 1.25;
+			x = safezoneX + safezoneW - 1.50;
 			y = safezoneY + safezoneH - 0.030;
 			w = 0.92;
 			h = 0.04;
@@ -27,7 +27,7 @@ class osefStatusBar {
 			text="Loading ...";
 			class Attributes {
 				align="left";
-				color = "#FFCC00";
+				color = "#FFFFFF";
 			};
 		};
 	};

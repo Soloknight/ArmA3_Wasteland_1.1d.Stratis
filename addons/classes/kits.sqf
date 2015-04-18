@@ -17,8 +17,7 @@
 			_player addWeapon "Rangefinder";
 			_player addItem "FirstAidKit";
 			_player addItem"FirstAidKit";
-			_player addItemtoBackpack "NVGoggles";
-			};
+						};
 			
 		case (["_diver_", typeOf _player] call fn_findString != -1):
 			{
@@ -38,7 +37,6 @@
 			_player addWeapon "Binoculars";
 			_player addItem "FirstAidKit";
 			_player addItem "FirstAidKit";
-			_player addItemtoBackpack "NVGoggles";
 			};
 			
 		case (["_medic_", typeOf _player] call fn_findString != -1):
@@ -63,7 +61,6 @@
 			_player addItem "FirstAidKit";
 			_player addHeadgear "H_Beret_Colonel";
 			_player  addGoggles "G_Spectacles_Tinted";
-			_player addItemtoBackpack "NVGoggles";
 			};
 			
 		case (["_engineer_", typeOf _player] call fn_findString != -1):
@@ -89,7 +86,6 @@
 			_player addItem "FirstAidKit";
 			_player addHeadgear "H_Watchcap_blk";
 			_player addGoggles "G_Balaclava_blk";
-			_player addItemtoBackpack "NVGoggles";
 			};
 			
 		case (["_crew_", typeOf _player] call fn_findString != -1):
@@ -107,7 +103,6 @@
 			_player addMagazine "6Rnd_45ACP_Cylinder";
 			_player addMagazine "6Rnd_45ACP_Cylinder";
 			_player addHeadgear "H_ShemagOpen_tan";
-			_player addItemtoBackpack "NVGoggles";
 			};
 			
 			
@@ -133,8 +128,6 @@
 			_player addItemtoBackpack "SLAMDirectionalMine_Wire_Mag";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
-			_player addHeadgear "H_Cap_marshal";
-			_player addItemtoBackpack "NVGoggles";
 			};
 			
 			default

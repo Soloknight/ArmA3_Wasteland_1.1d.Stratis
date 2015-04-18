@@ -81,5 +81,5 @@ if (isServer) then
 [] execVM "addons\safezone\safezone.sqf"; //safezones
 [] execVM "addons\vactions\functions.sqf"; //vehicle actions
 [] execVM "addons\HvT\HvT.sqf"; // High Value Target
-nul = [] execVM "addons\3Dmarkers\3Dmarkers.sqf"; // 3dmarkers
+// nul = [] execVM "addons\3Dmarkers\3Dmarkers.sqf"; // 3dmarkers removed for now
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; // GID

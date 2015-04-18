@@ -10,7 +10,7 @@ private ["_pressedKey", "_handled", "_move", "_moveM", "_moveP"];
 _pressedKey = _this select 1;
 _handled = false;
 
-if (_pressedKey in actionKeys "User3") then
+if (_pressedKey in actionKeys "GetOver") then
 {
 	if (horde_jumpmf_var_jumping) exitWith
 	{

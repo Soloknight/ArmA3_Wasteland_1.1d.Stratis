@@ -20,20 +20,20 @@ pvpfw_cleanUp_dontCleanUpAroundDistance = 500; // Dont clean if the vehicle is i
 // Clean destroyed vehicles //
 //////////////////////////////
 pvpfw_cleanUp_vehicleRadius = 100; // Destroyed vehicles cleanup timer will start if no unit is closer than this
-pvpfw_cleanUp_vehicleTimer = 120;
+pvpfw_cleanUp_vehicleTimer = 900;
 
 //////////////////
 // Clean bodies //
 //////////////////
-pvpfw_cleanUp_bodyTimer = 600; // Bodies will be removed after the specified amount of seconds
+pvpfw_cleanUp_bodyTimer = 900; // Bodies will be removed after the specified amount of seconds
 
 /////////////////////////////////
 //     Clean weaponholders     //
 // weapons/magazines on ground //
 /////////////////////////////////
 #define __pvpfw_cleanUp_cleanWeaponHolders //comment out this line if you dont want weaponHolders to be cleaned up
-pvpfw_cleanUp_weaponHolderRadius = 50; // The weaponholders cleanup countdown will start if no unit is closer than this
-pvpfw_cleanUp_weaponHolderTimer = 600; // Weaponholders will be deleted after this time
+pvpfw_cleanUp_weaponHolderRadius = 100; // The weaponholders cleanup countdown will start if no unit is closer than this
+pvpfw_cleanUp_weaponHolderTimer = 900; // Weaponholders will be deleted after this time
 
 ///////////////////////////////
 // Clean destroyed buildings //
