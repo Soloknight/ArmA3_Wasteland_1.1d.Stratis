@@ -68,7 +68,8 @@ if (_packetName == "BIS_fnc_MP_packet") then
 				"mf_remote_",
 				"BH_fnc_",
 				"BIS_fnc_spawn",
-				"hint"
+				"hint",
+				"APOC_srv_"
 			];
 		};
 	};
