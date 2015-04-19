@@ -44,7 +44,7 @@ _ignoreAiDeaths = true;
 _waitUntilMarkerPos = nil;
 _waitUntilExec = nil;
 _waitUntilCondition = nil;
-_waitUntilSuccessCondition = {{isPlayer _x && _x distance _boxPos < 5} count playableUnits > 0};
+_waitUntilSuccessCondition = {{isPlayer _x && _x distance _boxPos < 10} count playableUnits > 0};
 
 
 _failedExec =
