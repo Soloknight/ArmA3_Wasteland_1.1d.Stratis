@@ -44,7 +44,7 @@ _heliDirection = random 360;
 
 _flyHeight = 200;  //Distance from ground that heli will fly at
 _spos = [
-	[5000,5000,_flyHeight]/*, Disabling the other spawn points.  Takes too long for huron to get to target site
+	[3900,4500,_flyHeight]/*, Disabling the other spawn points.  Takes too long for huron to get to target site
 	[2475,25690,_flyHeight], 
 	[2000,7000,_flyHeight], 
 	[19000,27000,_flyHeight], 
@@ -130,18 +130,23 @@ _object allowDamage false; //Let's not let these things get destroyed on the way
 diag_log format ["Apoc's Airdrop Assistance - Object at %1", position _object];  //A little log love to confirm the location of this new creature
 
 //Wait until the heli is close to the drop spot, then move on to dropping the cargo and all of that jazz
-WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50};
+WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<250};
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;
+_heli fire "CMFlareLauncher";
+_heli fire "CMFlareLauncher";
+sleep 5;
+_heli fire "CMFlareLauncher";
+_heli fire "CMFlareLauncher";
 
 WaitUntil {(((position _object) select 2) < (_flyHeight-20))};
 		_objectPosDrop = position _object;
 		_para = createVehicle ["B_Parachute_02_F", _objectPosDrop, [], 0, ""];
 		_object attachTo [_para,[0,0,-1.5]];
 		
-		_smoke1= "SmokeShellGreen" createVehicle getPos _object;
+		_smoke1= "SmokeShellRed" createVehicle getPos _object;
 		_smoke1 attachto [_object,[0,0,-0.5]];
-		_flare1= "F_40mm_Green" createVehicle getPos _object;
+		_flare1= "F_40mm_Red" createVehicle getPos _object;
 		_flare1 attachto [_object,[0,0,-0.5]];
 		
 		if (_type == "vehicle") then {_object allowDamage true;}; //Turn on damage for vehicles once they're in the 'chute.  Could move this until they hit the ground.  Admins choice.

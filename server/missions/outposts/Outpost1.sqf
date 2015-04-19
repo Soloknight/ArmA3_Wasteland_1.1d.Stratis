@@ -17,11 +17,11 @@
 	["Land_BagFence_Long_F", [-4.06665, -6.43359, 0], 90],
 	["Land_BarGate_F", [0.25195, -7.94873, 0], 180],
 	["Land_BagBunker_Small_F", [5.96436, 7.86963, 0], 180],
-	["Box_FIA_Support_F", [-6.24817, 8.69141, 0], 180, { [_this, ["mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom] call fn_refillbox }],
+	["Box_FIA_Support_F", [-6.24817, 8.69141, 0], 180, { [_this, ["mission_TOP_Gear1","mission_TOP_Sniper","mission_USSpecial","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom] call fn_refillbox }],
 	["Land_BagBunker_Small_F", [-6.35974, 7.86914, 0], 180],
 	["Land_BagBunker_Small_F", [-6.06433, -10.0005, 0], 0],
 	["Land_BagBunker_Small_F", [6.27478, -9.8975, 0], 0],
-	["Box_FIA_Support_F", [6.26294, -10.02422, 0], 180, { [_this, ["mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom] call fn_refillbox }],
+	["Box_FIA_Support_F", [6.26294, -10.02422, 0], 180, { [_this, ["mission_TOP_Gear1","mission_TOP_Sniper","mission_USSpecial","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom] call fn_refillbox }],
 	["Land_HBarrierBig_F", [-11.583, -5.92871, 0], 45],
 	["Land_HBarrierBig_F", [-12.4873, 5.40869, 0], 315],
 	["Land_HBarrierBig_F", [10.9138, 4.86182, 0], 45],
@@ -35,3 +35,4 @@
 	["I_HMG_01_high_F", [14.7, -0.95, 0], 90, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
 	["I_HMG_01_high_F", [-16, -0.15, 0], 270, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
 ]
+_randomBox = ["mission_TOP_Gear1","mission_TOP_Sniper","mission_USSpecial","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
