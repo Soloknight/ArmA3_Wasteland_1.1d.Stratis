@@ -44,7 +44,7 @@ _heliDirection = random 360;
 
 _flyHeight = 200;  //Distance from ground that heli will fly at
 _spos = [
-	[15000,15000,_flyHeight]/*, Disabling the other spawn points.  Takes too long for huron to get to target site
+	[5000,5000,_flyHeight]/*, Disabling the other spawn points.  Takes too long for huron to get to target site
 	[2475,25690,_flyHeight], 
 	[2000,7000,_flyHeight], 
 	[19000,27000,_flyHeight], 
@@ -64,7 +64,7 @@ _crew allowDamage false;
 
 _heli setCaptive true;
 
-_heliDistance = 2500;
+_heliDistance = 5000;
 _dir = ((_dropSpot select 0) - (_spos select 0)) atan2 ((_dropSpot select 1) - (_spos select 1));
 _flySpot = [(_dropSpot select 0) + (sin _dir) * _heliDistance, (_dropSpot select 1) + (cos _dir) * _heliDistance, _flyHeight];
 
