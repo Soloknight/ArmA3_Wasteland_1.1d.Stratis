@@ -17,7 +17,8 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
-<br/> [New*] Streamlined HUD and server cleanup
+<br/> [New*] Revamped Airdrop 
+<br/> [New*] Streamlined HUD and server Cleanup
 <br/> [New*] Video settings action moved to player menu
 <br/> [New*] High Value Target Bounty !
 <br/> [New*] Minor fixes and performance improvements
