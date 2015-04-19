@@ -35,4 +35,3 @@
 	["I_HMG_01_high_F", [14.7, -0.95, 0], 90, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
 	["I_HMG_01_high_F", [-16, -0.15, 0], 270, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
 ]
-_randomBox = ["mission_TOP_Gear1","mission_TOP_Sniper","mission_USSpecial","mission_USLaunchers","mission_USSpecial","mission_Main_A3snipers"] call BIS_fnc_selectRandom;
