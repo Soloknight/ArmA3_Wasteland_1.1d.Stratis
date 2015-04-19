@@ -188,7 +188,7 @@ class playerSettings {
 		class btnDistanceFar : w_RscButton {
 			idc = -1;
 			text = "Far";
-			onButtonClick = "setViewDistance 5000; setObjectViewDistance 3500; setTerrainGrid 15;";
+			onButtonClick = "setViewDistance 4000; setObjectViewDistance 3000; setTerrainGrid 15;";
 			x = 0.02; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
