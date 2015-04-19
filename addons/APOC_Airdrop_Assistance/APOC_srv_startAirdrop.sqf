@@ -130,7 +130,18 @@ _object allowDamage false; //Let's not let these things get destroyed on the way
 diag_log format ["Apoc's Airdrop Assistance - Object at %1", position _object];  //A little log love to confirm the location of this new creature
 
 //Wait until the heli is close to the drop spot, then move on to dropping the cargo and all of that jazz
-WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<300};
+
+// fix the drop distance between vehicles and ammo boxes - CP
+_class = typeOf _object;
+
+
+if (_class == "B_supplyCrate_F") then
+	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50}}
+else
+	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<300}
+	};
+
+
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;
 _heli fire "CMFlareLauncher";
@@ -153,9 +164,9 @@ WaitUntil {(((position _object) select 2) < (_flyHeight-20))};
 
 WaitUntil {((((position _object) select 2) < 1) || (isNil "_para"))};
 		detach _object;
-		_smoke2= "SmokeShellGreen" createVehicle getPos _object;
+		_smoke2= "SmokeShellRed" createVehicle getPos _object;
 		//_smoke2 attachto [_object,[0,0,-0.5]];
-		_flare2= "F_40mm_Green" createVehicle getPos _object;
+		_flare2= "F_40mm_Red" createVehicle getPos _object;
 		//_flare2 attachto [_object,[0,0,-0.5]];
 
 //Delete heli once it has proceeded to end point
