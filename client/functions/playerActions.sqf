@@ -30,7 +30,7 @@
 	["Push vehicle forward", "server\functions\pushVehicle.sqf", [2.5], 1, false, false, "", "[2.5] call canPushWatercraft"],
 	["Push vehicle backward", "server\functions\pushVehicle.sqf", [-2.5], 1, false, false, "", "[-2.5] call canPushWatercraft"],
 	["<img image='client\icons\para.paa'/> Open Parachute", fn_openParachute, [], 20, true, true, "", "vehicle player == player && (getPos player) select 2 > 2.5"],
-	["<img image='client\icons\para.paa'/> Emergency eject", "client\actions\forceEject.sqf", [], -9, false, true, "", "(vehicle player) isKindOf 'Air'"],
+	["<img image='client\icons\para.paa'/> Emergency eject", "client\actions\forceEject.sqf", [], 11, false, true, "", "(vehicle player) isKindOf 'Air'"],
 	[format ["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa' color='%1'/> <t color='%1'>[</t>Request Airdrop<t color='%1'>]</t>", "#FFFFFF "],"addons\APOC_Airdrop_Assistance\APOC_cli_menu.sqf",[], -100, false, false]
 ];
 
