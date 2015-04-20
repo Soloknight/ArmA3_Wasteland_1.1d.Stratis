@@ -11,3 +11,4 @@
 #include "Ruins.sqf"
 #include "Random.sqf"
 #include "Atm.sqf"
+#include "Airport.sqf"
