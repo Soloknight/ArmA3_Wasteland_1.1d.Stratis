@@ -15,7 +15,7 @@ class osefStatusBarAdmin {
 		class statusBarText {
 			idc = 55554;
 			x = safezoneX + safezoneW - 1.90;
-			y = safezoneY + safezoneH - 0.061;
+			y = safezoneY + safezoneH - 0.063;
 			w = 1.35;
 			h = 0.06;
 			shadow = 2;
