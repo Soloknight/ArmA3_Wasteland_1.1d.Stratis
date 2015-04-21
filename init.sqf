@@ -75,12 +75,12 @@ if (isServer) then
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 [] execVM "addons\JumpMF\init.sqf";
 [] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf"; // Repack your near empty clips
-[] execVM "addons\statusBar\statusBar.sqf";   // shows FPS and teamspeak details
 [] execVM "addons\Explosives-To-Vehicle\init.sqf"; // addon for explosives to vehicles
 [] execVM "addons\laptop\init.sqf";		 // hack Laptop mission addon
 [] execVM "addons\safezone\safezone.sqf"; //safezones
 [] execVM "addons\vactions\functions.sqf"; //vehicle actions
 [] execVM "addons\HvT\HvT.sqf"; // High Value Target
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
+if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 // nul = [] execVM "addons\3Dmarkers\3Dmarkers.sqf"; // 3dmarkers removed for now
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; // GID
