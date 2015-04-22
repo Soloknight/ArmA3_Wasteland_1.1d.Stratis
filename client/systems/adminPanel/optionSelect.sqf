@@ -127,7 +127,31 @@ if (_uid call isAdmin) then
 				{
 					hint format["Server FPS: %1",serverFPS];
 				};
-				case 7: //Test Function
+				case 7: //Unlock Base Objects within 50m - Requested by PatPgtips
+				{
+					_confirmMsg = format ["This will unlock all base objects within 50m<br/>"];
+					_confirmMsg = _confirmMsg + format ["<br/>Unlock Objects (50m)? "];
+
+					if ([parseText _confirmMsg, "Confirm", "CONFIRM", true] call BIS_fnc_guiMessage) then
+					{
+					{_x setVariable ["objectLocked",false,true];} forEach (position player nearObjects ["All",50]);
+					hint format["You have unlocked all base objects within 50m of the area"];
+					};
+				 };
+				case 8: //Delete Unlocked Base Objects within 50m - Requested by PatPgtips
+				{
+					_confirmMsg = format ["This will delete all unlocked base objects within 50m<br/>"];
+					_confirmMsg = _confirmMsg + format ["<br/>Delete Objects?"];
+
+					if ([parseText _confirmMsg, "Confirm", "CONFIRM", true] call BIS_fnc_guiMessage) then
+					{
+					
+					{if !(_x getVariable ["objectLocked",false]) then {deleteVehicle _x};} forEach (position player nearObjects ["All",50]);
+					hint format["You have deleted all unlocked base objects within 50m of the area"];
+					};
+					
+				};
+				case 9: //Test Function
 				{
 					_group = createGroup civilian;
 					_leader = _group createunit ["C_man_polo_1_F", getPos player, [], 0.5, "Form"];
