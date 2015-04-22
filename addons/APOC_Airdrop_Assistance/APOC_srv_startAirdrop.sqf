@@ -136,9 +136,9 @@ _class = typeOf _object;
 
 
 if (_class == "B_supplyCrate_F") then
-	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<25}}
+	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50}}
 else
-	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50}
+	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<150}
 	};
 
 
