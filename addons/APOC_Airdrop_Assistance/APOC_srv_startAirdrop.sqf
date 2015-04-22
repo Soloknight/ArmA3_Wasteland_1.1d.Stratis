@@ -38,18 +38,18 @@ _playermoney = _player setVariable ["bmoney", _playermoney - _price, true];
  _center = createCenter civilian;
 _grp = createGroup civilian;
 if(isNil("_grp2"))then{_grp2 = createGroup civilian;}else{_grp2 = _grp2;};
-_flyHeight = 350;
+_flyHeight = 250;
 _dropSpot = [(position _player select 0),(position _player select 1),_flyHeight];
 _heliDirection = random 360;
 
-_flyHeight = 200;  //Distance from ground that heli will fly at
+_flyHeight = 300;  //Distance from ground that heli will fly at - Stratis Co-ords
 _spos = [
-	[3900,4500,_flyHeight]/*, Disabling the other spawn points.  Takes too long for huron to get to target site
-	[2475,25690,_flyHeight], 
-	[2000,7000,_flyHeight], 
-	[19000,27000,_flyHeight], 
-	[28767,13935,_flyHeight], 
-	[27552,5013,_flyHeight]*/
+	[140,4500,_flyHeight],
+	[8000,4500,_flyHeight], 
+	[6000,2500,_flyHeight], 
+	[1700,7500,_flyHeight],
+	[700,1800,_flyHeight], 
+	[6500,7200,_flyHeight]
 ] call BIS_fnc_selectRandom;
 
 diag_log format ["AAA - Heli Spawned at %1", _spos];
@@ -136,17 +136,14 @@ _class = typeOf _object;
 
 
 if (_class == "B_supplyCrate_F") then
-	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50}}
+	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<25}}
 else
-	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<300}
+	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50}
 	};
 
 
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;
-_heli fire "CMFlareLauncher";
-_heli fire "CMFlareLauncher";
-sleep 5;
 _heli fire "CMFlareLauncher";
 _heli fire "CMFlareLauncher";
 
@@ -162,7 +159,7 @@ WaitUntil {(((position _object) select 2) < (_flyHeight-20))};
 		
 		if (_type == "vehicle") then {_object allowDamage true;}; //Turn on damage for vehicles once they're in the 'chute.  Could move this until they hit the ground.  Admins choice.
 
-WaitUntil {((((position _object) select 2) < 1) || (isNil "_para"))};
+WaitUntil {((((position _object) select 2) < 10) || (isNil "_para"))};
 		detach _object;
 		_smoke2= "SmokeShellRed" createVehicle getPos _object;
 		//_smoke2 attachto [_object,[0,0,-0.5]];

@@ -51,4 +51,9 @@ _confirmMsg = _confirmMsg + format ["<br/><t font='EtelkaMonospaceProBold'>1</t>
 	APOC_AA_lastUsedTime = diag_tickTime;
 	diag_log format ["AAA - Just Used Time: %1; CoolDown Set At: %2; Current Time: %3",APOC_AA_lastUsedTime, APOC_AA_coolDownTime, diag_tickTime];
 	};
+// Saves players bank details after airdrop request	
+if (["A3W_playerSaving"] call isConfigOn) then
+		{
+				[] spawn fn_savePlayerData;
+		};
 	
