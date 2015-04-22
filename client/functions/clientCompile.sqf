@@ -52,9 +52,6 @@ unitHandleDamage = "client\functions\unitHandleDamage.sqf" call mf_compile;
 updateTerritoryMarkers = "territory\client\updateTerritoryMarkers.sqf" call mf_compile;
 vehicleSideCfg = "client\functions\vehicleSideCfg.sqf" call mf_compile;
 weaponDisassembledEvent = "client\functions\weaponDisassembledEvent.sqf" call mf_compile;
-fn_dropbox = "client\functions\fn_dropbox.sqf" call mf_compile;
-fn_processBox = "client\functions\fn_processBox.sqf" call mf_compile;
-
 
 
 // Player details and actions
@@ -89,6 +86,7 @@ client_respawnDialog = "client\systems\playerMenu\dialog\loadRespawnDialog.sqf" 
 fn_respawnTimer = "client\systems\scoreboard\fn_respawnTimer.sqf" call mf_compile;
 loadGeneralStore = "client\systems\generalStore\loadGenStore.sqf" call mf_compile;
 loadGunStore = "client\systems\gunStore\loadGunStore.sqf" call mf_compile;
+loadVehicleStore = "client\systems\vehicleStore\loadVehicleStore.sqf" call mf_compile;
 loadScoreboard = "client\systems\scoreboard\loadScoreboard.sqf" call mf_compile;
 gearProperties = "client\functions\gearProperties.sqf" call mf_compile;
 getCapacity = "client\functions\getCapacity.sqf" call mf_compile;
