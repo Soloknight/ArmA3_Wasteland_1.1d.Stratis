@@ -38,19 +38,13 @@ _playermoney = _player setVariable ["bmoney", _playermoney - _price, true];
  _center = createCenter civilian;
 _grp = createGroup civilian;
 if(isNil("_grp2"))then{_grp2 = createGroup civilian;}else{_grp2 = _grp2;};
-_flyHeight = 250;
+
+_flyHeight = 350;
 _dropSpot = [(position _player select 0),(position _player select 1),_flyHeight];
 _heliDirection = random 360;
-
-_flyHeight = 300;  //Distance from ground that heli will fly at - Stratis Co-ords
-_spos = [
-	[140,4500,_flyHeight],
-	[8000,4500,_flyHeight], 
-	[6000,2500,_flyHeight], 
-	[1700,7500,_flyHeight],
-	[700,1800,_flyHeight], 
-	[6500,7200,_flyHeight]
-] call BIS_fnc_selectRandom;
+_flyHeight = 200;  //Distance from ground that heli will fly at
+_heliStartDistance = 2500;
+_spos=[(_dropSpot select 0) - (sin _heliDirection) * _heliStartDistance, (_dropSpot select 1) - (cos _heliDirection) * _heliStartDistance, (_flyHeight+200)];
 
 diag_log format ["AAA - Heli Spawned at %1", _spos];
 _heli = createVehicle [_heliType, _spos, [], 0, "FLY"];
@@ -131,16 +125,12 @@ diag_log format ["Apoc's Airdrop Assistance - Object at %1", position _object]; 
 
 //Wait until the heli is close to the drop spot, then move on to dropping the cargo and all of that jazz
 
-// fix the drop distance between vehicles and ammo boxes - CP
-_class = typeOf _object;
-
-
-if (_class == "B_supplyCrate_F") then
-	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50}}
-else
-	{WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<150}
-	};
-
+// fix the drop distance between vehicles and ammo boxes - Creampie
+if (_type == "vehicle") then {
+	WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<300};
+} else {
+	WaitUntil{([_heli, _dropSpot] call BIS_fnc_distance2D)<50};
+};
 
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;
@@ -148,6 +138,7 @@ _heli fire "CMFlareLauncher";
 _heli fire "CMFlareLauncher";
 
 WaitUntil {(((position _object) select 2) < (_flyHeight-20))};
+		_heli fire "CMFlareLauncher";
 		_objectPosDrop = position _object;
 		_para = createVehicle ["B_Parachute_02_F", _objectPosDrop, [], 0, ""];
 		_object attachTo [_para,[0,0,-1.5]];
@@ -159,7 +150,7 @@ WaitUntil {(((position _object) select 2) < (_flyHeight-20))};
 		
 		if (_type == "vehicle") then {_object allowDamage true;}; //Turn on damage for vehicles once they're in the 'chute.  Could move this until they hit the ground.  Admins choice.
 
-WaitUntil {((((position _object) select 2) < 10) || (isNil "_para"))};
+WaitUntil {((((position _object) select 2) < 1) || (isNil "_para"))};
 		detach _object;
 		_smoke2= "SmokeShellRed" createVehicle getPos _object;
 		//_smoke2 attachto [_object,[0,0,-0.5]];
