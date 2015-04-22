@@ -1,3 +1,12 @@
+/*
+	@file Version: 0.1
+	@file Name: statusBar.sqf
+	@file  EpochMod StatusBar Port for Wasteland by CRE4MPIE
+	@file Created: 21/4/2015
+	@notes: Added custom Icons and ported Wasteland info. Still 
+			needs to be cleaned up a bit.
+*/
+
 waitUntil {!(isNull (findDisplay 46))};
 disableSerialization;
 admin_list = ["0"];
@@ -7,7 +16,7 @@ if (!((getPlayerUID player) in admin_list))then
 
 	_rscLayer = "osefStatusBarAdmin" call BIS_fnc_rscLayer;
 	_rscLayer cutRsc["osefStatusBarAdmin","PLAIN"];
-	systemChat format["Initializing...", _rscLayer];
+	systemChat format["Initialized StatusBar...", _rscLayer];
 	[] spawn 
 	{
 
@@ -85,7 +94,7 @@ if (!((getPlayerUID player) in admin_list))then
 			
 		_colourDamage = _colourDefault;
 		if(_damage >= 100) then{_colourDamage = _colour100;};
-		if((_damage >= 90) && (_damage < 100)) then {_colourDamage =  _colour90;};
+		if((_damage >= 90) && (_damage < 100)) then {_colourDamage =  _colour100;};
 		if((_damage >= 80) && (_damage < 90)) then {_colourDamage =  _colour80;};
 		if((_damage >= 70) && (_damage < 80)) then {_colourDamage =  _colour70;};
 		if((_damage >= 60) && (_damage < 70)) then {_colourDamage =  _colour60;};
