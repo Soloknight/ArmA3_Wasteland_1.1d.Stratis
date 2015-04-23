@@ -18,6 +18,7 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [Added] Toxic Grenades
 <br/> [Adjusted] Hide Body to $1000
 <br/> [New] UI Status bar
 <br/> [Adjusted] Aidrop Spawn locations

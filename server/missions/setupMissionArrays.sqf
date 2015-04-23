@@ -28,7 +28,7 @@ SideMissions =
 	["mission_Outpost", 1],
 	["mission_Truck", 1],
 	["mission_HostileInfantry", 0.50],
-	["mission_Sniper", 1] ,
+	["mission_Sniper", 1],
 	["mission_Roadblock", 1],
 	["mission_AirWreck", 1],
 	["mission_geoCache", 1]
