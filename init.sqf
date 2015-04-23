@@ -81,6 +81,7 @@ if (isServer) then
 [] execVM "addons\vactions\functions.sqf"; //vehicle actions
 [] execVM "addons\HvT\HvT.sqf"; // High Value Target
 [] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
+[] execVM "addons\scripts\toxic_gas.sqf"; // teargass bitches !
 if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
 // nul = [] execVM "addons\3Dmarkers\3Dmarkers.sqf"; // 3dmarkers removed for now
 if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; // GID
