@@ -5,7 +5,7 @@
 //	@Special Thanks to Pitoucc
 
 
-_gasMask = ["H_CrewHelmetHeli_B","H_CrewHelmetHeli_O","H_CrewHelmetHeli_I"]; // define the gasmasks here 
+_gasMask = ["H_CrewHelmetHeli_B","H_CrewHelmetHeli_O","H_CrewHelmetHeli_I","H_PilotHelmetHeli_B","H_PilotHelmetHeli_O","H_PilotHelmetHeli_I","H_PilotHelmetFighter_B","H_PilotHelmetFighter_O","H_PilotHelmetFighter_I"]; // define the gasmasks here 
 
 setNoGasStatus={
     "dynamicBlur" ppEffectEnable true;                  // enables ppeffect
@@ -26,18 +26,19 @@ setGasStatus = {
 };
 
 gasDamage = {
-    player setDamage (damage player + 0.15);     		//damage per tick
-	sleep 2.5;                                  		    // Timer damage is assigned "seconds"
+   player setDamage (damage player + 0.15);     		//damage per tick
+   sleep 3;                                 		    // Timer damage is assigned "seconds"
 };
+
 
 While{true} do{
 		call setNoGasStatus;
 	waituntil{
-		((nearestObject [getPosATL player, "SmokeShell"]) distance player < 10)       // detects if player is within grenade radius
-		&&
-		(getPosATL (nearestObject [getPosATL player, "SmokeShell"]) select 2 < 0.5)
+		((nearestObject [getPosATL player, "SmokeShell"]) distance player < 5)       // detects if player is within grenade radius
+//		&&
+//		(getPosATL (nearestObject [getPosATL player, "SmokeShell"]) select 2 < 0.5) 
 	};
-
+	
 	if !(headgear player in _gasMask) then 
 		 {
 			call setGasStatus;
