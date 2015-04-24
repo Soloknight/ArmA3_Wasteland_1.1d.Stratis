@@ -34,10 +34,11 @@ gasDamage = {
 While{true} do{
 		call setNoGasStatus;
 	waituntil{
-		((nearestObject [getPosATL player, "SmokeShell"]) distance player < 5)       // detects if player is within grenade radius
-//		&&
-//		(getPosATL (nearestObject [getPosATL player, "SmokeShell"]) select 2 < 0.5) 
-	};
+        _smokeShell = nearestObject [getPosATL player, "SmokeShellYellow"];
+        _smokeShell distance player < 10
+        &&
+        velocity _smokeShell isEqualTo [ 0, 0, 0 ]
+    };  
 	
 	if !(headgear player in _gasMask) then 
 		 {
