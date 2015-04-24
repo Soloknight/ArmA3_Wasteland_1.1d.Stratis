@@ -130,6 +130,28 @@
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			};
 			
+			
+			case (["_officer_", typeOf _player] call fn_findString != -1):
+			{
+			removeBackpack _player;
+			removeAllWeapons _player;
+			_player addVest "V_BandollierB_blk";
+			_player addBackpack "B_FieldPack_blk";
+			_player addWeapon "MMG_01_tan_F";
+			_player forceAddUniform "U_C_Scientist";
+			_player addPrimaryWeaponItem "optic_Holosight";
+			_player addItem "SmokeShellYellow";
+			_player addItem "SmokeShellYellow";
+			_player addItem "SmokeShellYellow";
+			_player addItem "SmokeShellYellow";
+			_player addItem "FirstAidKit";
+			_player addItem "FirstAidKit";
+			_player addMagazine "150Rnd_93x64_Mag";
+			_player addHeadgear "H_PilotHelmetFighter_I";
+			};
+			
 			default
 			{};
 		};
+
+

@@ -359,11 +359,11 @@ class Mission
 					position[]={3755.75,8.8626299,7953.2583};
 					id=10;
 					side="WEST";
-					vehicle="B_medic_F";
+					vehicle="B_officer_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					description="Medic";
+					description="Hazmat Scientist";
 				};
 				class Item1
 				{
@@ -480,10 +480,10 @@ class Mission
 					position[]={3755.751,9.4743881,7949.6108};
 					id=22;
 					side="WEST";
-					vehicle="B_medic_F";
+					vehicle="B_officer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="Medic";
+					description="Hazmat Scientist";
 				};
 				class Item13
 				{
@@ -848,11 +848,11 @@ class Mission
 					position[]={3761.1025,9.6028681,7953.2603};
 					id=58;
 					side="EAST";
-					vehicle="O_medic_F";
+					vehicle="O_officer_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					description="Medic";
+					description="Hazmat Scientist";
 				};
 				class Item1
 				{
@@ -969,10 +969,10 @@ class Mission
 					position[]={3761.1035,10.134292,7949.6128};
 					id=70;
 					side="EAST";
-					vehicle="O_medic_F";
+					vehicle="O_officer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="Medic";
+					description="Hazmat Scientist";
 				};
 				class Item13
 				{
@@ -1337,11 +1337,11 @@ class Mission
 					position[]={3766.4941,10.030217,7953.2583};
 					id=106;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="I_officer_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					description="Medic";
+					description="Hazmat Scientist";
 				};
 				class Item1
 				{
@@ -1458,10 +1458,10 @@ class Mission
 					position[]={3766.4961,10.453169,7949.6113};
 					id=118;
 					side="GUER";
-					vehicle="I_medic_F";
+					vehicle="I_officer_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="Medic";
+					description="Hazmat Scientist";
 				};
 				class Item13
 				{

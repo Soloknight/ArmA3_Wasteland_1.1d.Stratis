@@ -29,23 +29,9 @@ if (hmd _player != "") then { _player unlinkItem hmd _player };
 
 // Add NVG
  _player linkItem "NVGoggles";	
+ 
 
-/*
-		_player addBackpack "B_Kitbag_sgg";
-		_player addWeapon "SMG_02_F";
-		_player addWeapon "hgun_Pistol_heavy_02_F";
-		_player addMagazine "30Rnd_9x21_Mag";
-		_player addMagazine "30Rnd_9x21_Mag";
-		_player addMagazine "6Rnd_45ACP_Cylinder";
-		_player addMagazine "6Rnd_45ACP_Cylinder";
-		_player addItem "FirstAidKit";
-		_player selectWeapon "SMG_02_F";
-		_player addItem "HandGrenade";
-		_player addItem "Medikit";
-		_player addWeapon "Rangefinder";
-*/
-
-//load supporter loadouts
+//Load class loadouts
 _this call kits;
 
 if (_player == player) then
