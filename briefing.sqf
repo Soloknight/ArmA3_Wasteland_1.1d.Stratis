@@ -18,8 +18,11 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [Adjusted] UAV Prices in line with economy
+<br/> [Adjusted] Launcher Prices in line with economy
+<br/> [Added] Hazmat Scientist Class
 <br/> [Added] Toxic Grenades
-<br/> [Adjusted] Hide Body to $1000
+<br/> [Adjusted] Hide Body to $1,000
 <br/> [New] UI Status bar
 <br/> [Adjusted] Aidrop Spawn locations
 <br/> [Added] Revamped Airdrop 
