@@ -103,14 +103,14 @@ lmgArray = compileFinal str
 
 launcherArray = compileFinal str
 [
-	["RPG-42 Alamut", "launch_RPG32_F", 400],
-	["PCML", "launch_NLAW_F", 600],
-	["Titan MPRL Compact (Tan)", "launch_Titan_short_F", 500],
-	["Titan MPRL Compact (Brown)", "launch_O_Titan_short_F", 500],
-	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 500],
-	["Titan MPRL AA (Desert)", "launch_Titan_F", 600],
-	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 600],
-	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 600]
+	["RPG-42 Alamut", "launch_RPG32_F", 3000],
+	["PCML", "launch_NLAW_F", 4000],
+	["Titan MPRL Compact (Tan)", "launch_Titan_short_F", 5000],
+	["Titan MPRL Compact (Brown)", "launch_O_Titan_short_F", 5000],
+	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 5000],
+	["Titan MPRL AA (Desert)", "launch_Titan_F", 6000],
+	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 6000],
+	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 6000]
 ];
 
 allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call rifleArray + call lmgArray + call launcherArray);
@@ -151,6 +151,7 @@ throwputArray = compileFinal str
 [
 	["Mini Grenade", "MiniGrenade", 50],
 	["Frag Grenade", "HandGrenade", 100],
+	["Toxic Gas Grenade", "SmokeShellYellow", 750],
 	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 200],
 	["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 250],
 	["APERS Mine", "APERSMine_Range_Mag", 300],
@@ -159,13 +160,7 @@ throwputArray = compileFinal str
 	["AT Mine", "ATMine_Range_Mag", 400],
 	["Explosive Charge", "DemoCharge_Remote_Mag", 450],
 	["Explosive Satchel", "SatchelCharge_Remote_Mag", 500],
-	["Toxic Gas Grenade", "SmokeShell", 500],
-	["Smoke Grenade (Purple)", "SmokeShellPurple", 50],
-	["Smoke Grenade (Blue)", "SmokeShellBlue", 50],
-	["Smoke Grenade (Green)", "SmokeShellGreen", 50],
-	["Smoke Grenade (Yellow)", "SmokeShellYellow", 50],
-	["Smoke Grenade (Orange)", "SmokeShellOrange", 50],
-	["Smoke Grenade (Red)", "SmokeShellRed", 50]
+	["Smoke Grenade (White)", "SmokeShell", 50]
 ];
 
 //Gun Store Ammo List
@@ -204,12 +199,12 @@ ammoArray = compileFinal str
 	["12.7mm 10Rnd Mag", "10Rnd_127x54_Mag", 55], //DLC Ammo
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
-	["RPG-42 Anti-Tank Rocket", "RPG32_F", 250],              // Direct damage: high      | Splash damage: low    | Guidance: none
-	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 250],      // Direct damage: medium    | Splash damage: medium | Guidance: none
-	["PCML Anti-Tank Missile", "NLAW_F", 400],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 350],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
-	["Titan Anti-Personnel Missile", "Titan_AP", 350],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
-	["Titan Anti-Air Missile", "Titan_AA", 350],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
+	["RPG-42 Anti-Tank Rocket", "RPG32_F", 1500],              // Direct damage: high      | Splash damage: low    | Guidance: none
+	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 1500],      // Direct damage: medium    | Splash damage: medium | Guidance: none
+	["PCML Anti-Tank Missile", "NLAW_F", 1750],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
+	["Titan Anti-Tank Missile", "Titan_AT", 2500],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
+	["Titan Anti-Personnel Missile", "Titan_AP", 2500],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
+	["Titan Anti-Air Missile", "Titan_AA", 2500],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 250],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
@@ -571,12 +566,12 @@ genItemArray = compileFinal str
 [
 	["Remote Designator Bag (NATO)", "B_Static_Designator_01_weapon_F", 2000, "backpack"],
 	["Remote Designator Bag (CSAT)", "O_Static_Designator_02_weapon_F", 2000, "backpack"],
-	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
-	["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
-	["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
-	["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
+	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 25000, "backpack"],
+	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 25000, "backpack"],
+	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 25000, "backpack"],
+	["UAV Terminal (NATO)", "B_UavTerminal", 1500, "gps"],
+	["UAV Terminal (CSAT)", "O_UavTerminal", 1500, "gps"],
+	["UAV Terminal (AAF)", "I_UavTerminal", 1500, "gps"],
 	["GPS", "ItemGPS", 100, "gps"],
 	["First Aid Kit", "FirstAidKit", 25, "item"],
 	["Medikit", "Medikit", 150, "item"],
