@@ -135,19 +135,20 @@
 			{
 			removeBackpack _player;
 			removeAllWeapons _player;
-			_player addVest "V_BandollierB_blk";
-			_player addBackpack "B_FieldPack_blk";
-			_player addWeapon "MMG_01_tan_F";
-			_player forceAddUniform "U_C_Scientist";
-			_player addPrimaryWeaponItem "optic_Holosight";
+			_player addVest "V_PlateCarrier1_blk";
+			_player addBackpack "B_AssaultPack_blk";
+			_player addWeapon "MMG_02_black_F";
+			_player forceAddUniform "U_B_PilotCoveralls";
+			_player addPrimaryWeaponItem "optic_Aco";
+			_player addPrimaryWeaponItem "bipod_01_F_blk";
 			_player addItem "SmokeShellYellow";
 			_player addItem "SmokeShellYellow";
 			_player addItem "SmokeShellYellow";
 			_player addItem "SmokeShellYellow";
 			_player addItem "FirstAidKit";
 			_player addItem "FirstAidKit";
-			_player addMagazine "150Rnd_93x64_Mag";
-			_player addHeadgear "H_PilotHelmetFighter_I";
+			_player addMagazine "130Rnd_338_Mag";
+			_player addHeadgear "H_PilotHelmetFighter_B";
 			};
 			
 			default
@@ -155,3 +156,4 @@
 		};
 
 
+		
