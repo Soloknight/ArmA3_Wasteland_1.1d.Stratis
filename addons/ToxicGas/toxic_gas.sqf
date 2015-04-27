@@ -8,6 +8,7 @@
 private ["_damageRadius"];
 
 _gasMask = ["H_CrewHelmetHeli_B","H_CrewHelmetHeli_O","H_CrewHelmetHeli_I","H_PilotHelmetHeli_B","H_PilotHelmetHeli_O","H_PilotHelmetHeli_I","H_PilotHelmetFighter_B","H_PilotHelmetFighter_O","H_PilotHelmetFighter_I"]; // define the gasmasks here 
+_veh = ["Tank_F","Helicopter_Base_F","MRAP_01_base_F","MRAP_02_base_F","MRAP_03_base_F","Wheeled_APC_F"];
 
 
 setNoGasStatus={

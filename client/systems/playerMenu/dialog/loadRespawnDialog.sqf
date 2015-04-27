@@ -13,6 +13,8 @@
 #define DISABLE_ALL_BUTTONS format ["{ ctrlEnable [_x, false] } forEach %1;", [respawn_Random_Button, respawn_Spawn_Button, respawn_Locations_Type, respawn_Locations_List, respawn_Preload_Checkbox]]
 #define SPAWN_BEACON_COOLDOWN (["A3W_spawnBeaconCooldown", 5*60] call getPublicVar)
 #define BEACON_CHECK_RADIUS 250
+#define UNCONSCIOUS(UNIT) (UNIT getVariable ["FAR_isUnconscious", 0] == 1)
+#define SPAWN_TOWN_COOLDOWN (["A3W_townSpawnCooldown", 5*60] call getPublicVar)
 
 disableSerialization;
 waitUntil {!isNil "bis_fnc_init" && {bis_fnc_init}};
@@ -36,6 +38,7 @@ _locList = _display displayCtrl respawn_Locations_List;
 _locMap = _display displayCtrl respawn_Locations_Map;
 
 _spawnBeaconCooldown = SPAWN_BEACON_COOLDOWN;
+_townSpawnCooldown = SPAWN_TOWN_COOLDOWN;
 
 _side = switch (playerSide) do
 {
@@ -56,46 +59,12 @@ _randomButton buttonSetAction format ["%1 [%2,[0,nil]] execVM 'client\functions\
 _setPlayersInfo =
 {
 	private ["_location", "_maxRad", "_centerPos", "_maxRad", "_townEntry"];
-	
-_friendlyPlayers = 0;
-_location = _this; // spawn beacon object or town marker name
 
-// set base arrays
-_bbases = ["Town_21"];
-_obases = ["Town_22"];	
-_ibases = ["Town_23"];	
-_playerSide = side player;
-
-// only show bases per faction	
-switch (_playerSide) do {
-	case BLUFOR: 
-	{	 
-			if (_location in _bbases) then {
-			_friendlyPlayers = _friendlyPlayers + 1;
-		    }	  
-	}; 	
-	
-	case OPFOR: 
-	{	 
-			if (_location in _obases) then {
-			_friendlyPlayers = _friendlyPlayers + 1;
-		    }	  
-	}; 	
-	
-	
-	case INDEPENDENT: 
-	{	 
-			if (_location in _ibases) then {
-			_friendlyPlayers = _friendlyPlayers + 1;
-		    }	  
-	}; 	
-	
-};
-		
+	_location = _this; // spawn beacon object or town marker name
 	_isBeacon = (typeName _location == "OBJECT");
 	_maxRad = 0;
 	_friendlyUnits = [];
-
+	_friendlyPlayers = 0;
 	_friendlyNPCs = 0;
 	_enemyPlayers = 0;
 	_enemyNPCs = 0;
@@ -117,7 +86,7 @@ switch (_playerSide) do {
 	};
 
 	{
-		if (alive _x && {_x isKindOf "CAManBase"} && {_x distance _centerPos <= _maxRad}) then
+		if (alive _x && !UNCONSCIOUS(_x) && {_x isKindOf "CAManBase"} && {_x distance _centerPos <= _maxRad}) then
 		{
 			if (FRIENDLY_CONDITION) then
 			{
@@ -273,14 +242,49 @@ _selLocChanged =
 			{
 				_isValid = true;
 				_location call _getPlayersInfo;
-
-				if (_enemyPlayers > _friendlyPlayers) then
+				
+				_text = "";
+				
 				{
-					_textStr = _textStr + "[<t color='#ff0000'>Blocked by enemy</t>] ";
+				if (_x select 0 == _location) exitWith
+				{
+					_text = (_x select 2);
+				};
+				} forEach (call cityList);
+
+				_lastUseTown = player getVariable _text;
+
+				if (!isNil "_lastUseTown") then
+				{
+					_townSpawnCooldown = SPAWN_TOWN_COOLDOWN;
+					_remaining = _townSpawnCooldown - (diag_tickTime - _lastUseTown);
+					
+					if (_townSpawnCooldown > 0 && _remaining > 0) then
+					{
+						_textStr = _textStr + format ["[<t color='#ffff00'>%1</t>] ", _remaining call fn_formatTimer];
+					}
+					else
+					{
+						if (_enemyPlayers > _friendlyPlayers) then
+						{
+							_textStr = _textStr + "[<t color='#ff0000'>Blocked by enemy</t>] ";
+						}
+						else
+						{
+							_spawnBtnEnabled = true;
+						};
+					};
 				}
 				else
 				{
-					_spawnBtnEnabled = true;
+					if (_enemyPlayers > _friendlyPlayers) then
+					{
+						_textStr = _textStr + "[<t color='#ff0000'>Blocked by enemy</t>] ";
+					}
+					else
+					{
+						_spawnBtnEnabled = true;
+					};
 				};
 			};
 		};

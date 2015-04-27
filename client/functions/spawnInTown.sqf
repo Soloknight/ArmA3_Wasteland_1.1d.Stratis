@@ -31,6 +31,7 @@ _beacon setVariable ["spawnBeacon_lastUse", diag_tickTime];
 	};
 } forEach (call cityList);
 
+player setVariable [_townName, diag_tickTime];
 
 respawnDialogActive = false;
 closeDialog 0;

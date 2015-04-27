@@ -18,6 +18,8 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [Added] UAV Control Restrictions (Owner)
+<br/> [Added] Town spawn Cooldown
 <br/> [Adjusted] UAV Prices in line with economy
 <br/> [Adjusted] Launcher Prices in line with economy
 <br/> [Added] Hazmat Scientist Class
