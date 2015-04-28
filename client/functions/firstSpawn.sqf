@@ -16,7 +16,6 @@ setTerrainGrid 45;
 
 [] execVM "addons\welcomeMessage\welcomeMessage.sqf";
  
-
 player addEventHandler ["Take",
 {
 	_vehicle = _this select 1;
