@@ -54,11 +54,6 @@ if (!isNil "client_initEH") then { player removeEventHandler ["Respawn", client_
 player addEventHandler ["Respawn", { _this spawn onRespawn }];
 player addEventHandler ["Killed", { _this spawn onKilled }];
 
-
-
-
-
-
 A3W_scriptThreads pushBack execVM "client\functions\evalManagedActions.sqf";
 
 pvar_playerRespawn = player;
@@ -119,6 +114,8 @@ waitUntil {!isNull findDisplay 46};
 (findDisplay 46) displayAddEventHandler ["KeyUp", onKeyRelease];
 
 call compile preprocessFileLineNumbers "client\functions\setupClientPVars.sqf";
+
+
 
 //client Executes
 A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
