@@ -20,7 +20,10 @@ private ["_hasFailed", "_success","_pos","_uid","_beacon","_IsProtected","_IsAll
 _IsProtected = false;
 _IsAllowed = false;
 
-{
+
+// Remarking this out - suspect it's for some donator thing or the other ..
+
+/*{
 	if(((player distance getMarkerPos (_x select 3)) <  (_x select 1))) then 
 	{
 		_IsProtected = true;			
@@ -29,6 +32,8 @@ _IsAllowed = false;
 		};
 	};
 } forEach call Donators;
+
+*/
 
 _beacons = []; 
 { 
