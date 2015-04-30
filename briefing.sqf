@@ -18,8 +18,10 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
-<br/> [Added] Players can only deploy 1 beacon at a time
-<br/> [Removed] Temporarily ALL Thermal Imaging
+<br/> [Added] Base objects only save for 5 days
+<br/> [Added] Beacon Saving
+<br/> [Added] Players can only deploy 1 beacon
+<br/> [Added] Limited Thermals
 <br/> [Added] UAV Control Restrictions (Owner)
 <br/> [Added] Town spawn Cooldown
 <br/> [Adjusted] UAV Prices in line with economy
