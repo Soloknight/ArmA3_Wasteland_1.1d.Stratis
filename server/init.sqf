@@ -378,6 +378,6 @@ if (["A3W_serverMissions"] call isConfigOn) then
 
 
 // new cleanup test
-[] execVM "addons\module_cleanup\init.sqf";
+// [] execVM "addons\module_cleanup\init.sqf";
 // Start clean-up loop
 [] execVM "server\WastelandServClean.sqf";
