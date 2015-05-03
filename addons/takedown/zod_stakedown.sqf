@@ -7,7 +7,6 @@ zod_stakedown_minifunction = {
 
 if (_unit getVariable ["zod_stakedown_usesalute", true]) then {
 _unit playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
-playsound "finishhim";
 };
 
 sleep (_unit getVariable ["zod_stakedown_killtime", 1.5]);
