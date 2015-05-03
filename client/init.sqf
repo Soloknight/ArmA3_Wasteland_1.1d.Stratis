@@ -140,6 +140,11 @@ A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
 call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 [] execVM "client\functions\drawPlayerMarkers.sqf";
 
+// set takedown params and init
+zod_stakedown_showhint = true;
+zod_stakedown_showtext = true;
+[] execVM "addons\takedown\zod_stakedown_init.sqf";
+
 // update player's spawn beaoon
 {
 	if (_x getVariable ["ownerUID",""] == getPlayerUID player) then
