@@ -18,6 +18,7 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [Added] Slit Throat ( live and wounded players )
 <br/> [Added] Base objects only save for 5 days
 <br/> [Added] Beacon Saving
 <br/> [Added] Players can only deploy 1 beacon
