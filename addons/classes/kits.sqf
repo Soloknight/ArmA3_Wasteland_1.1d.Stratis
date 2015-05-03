@@ -7,9 +7,9 @@
 			removeBackpack _player;
 			removeAllWeapons _player;
 			_player addBackpack "B_FieldPack_oucamo";
+			_player addMagazine "10Rnd_762x54_Mag";
+			_player addMagazine "10Rnd_762x54_Mag";
 			_player addWeapon "srifle_DMR_01_SOS_F";
-			_player addMagazine "10Rnd_762x54_Mag";
-			_player addMagazine "10Rnd_762x54_Mag";
 			_player addItemtoBackpack "ClaymoreDirectionalMine_Remote_Mag";
 			_player addItemtoBackpack "ClaymoreDirectionalMine_Remote_Mag";
 			_player addWeapon "hgun_Rook40_snds_F";
@@ -24,12 +24,12 @@
 			removeBackpack _player;
 			removeAllWeapons _player;
 			_player addBackpack "B_FieldPack_blk";
-			_player addWeapon "arifle_MX_GL_Black_Hamr_pointer_F";
 			_player addPrimaryWeaponItem "muzzle_snds_M";
 			_player addMagazine "1Rnd_HE_Grenade_shell";
 			_player addMagazine "1Rnd_HE_Grenade_shell";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
+			_player addWeapon "arifle_MX_GL_Black_Hamr_pointer_F";
 			_player addItem "APERSBoundingMine_Range_Mag";
 			_player addItem "APERSBoundingMine_Range_Mag";
 			_player addWeapon "hgun_ACPC2_snds_F";
@@ -46,9 +46,9 @@
 			_player addBackpack "B_FieldPack_blk";
 			_player forceAddUniform "U_Marshal";
 			_player addVest "V_TacVestIR_blk";
+			_player addMagazine "100Rnd_65x39_caseless_mag";
+			_player addMagazine "100Rnd_65x39_caseless_mag";
 			_player addWeapon "arifle_MX_SW_Hamr_pointer_F";
-			_player addMagazine "100Rnd_65x39_caseless_mag";
-			_player addMagazine "100Rnd_65x39_caseless_mag";
 			_player addItem "HandGrenade";
 			_player addItem "HandGrenade";
 			_player addItem "SmokeShell";
@@ -69,9 +69,9 @@
 			removeAllWeapons _player;
 			_player addBackpack "B_Carryall_oli";
 			_player forceAddUniform "U_BG_Guerilla2_1";
+			_player addMagazine "30Rnd_9x21_Mag";
+			_player addMagazine "30Rnd_9x21_Mag";
 			_player addWeapon "SMG_02_ACO_F";
-			_player addMagazine "30Rnd_9x21_Mag";
-			_player addMagazine "30Rnd_9x21_Mag";
 			_player addItem "HandGrenade";
 			_player addItem "HandGrenade";
 			_player addWeapon "launch_RPG32_F";
@@ -95,13 +95,13 @@
 			_player addVest "V_HarnessOGL_gry";
 			_player forceAddUniform "U_I_G_resistanceLeader_F";
 			_player addBackpack "B_AssaultPack_cbr";
+			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
+			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
+			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
+			_player addMagazine "6Rnd_45ACP_Cylinder";
+			_player addMagazine "6Rnd_45ACP_Cylinder";
+			_player addMagazine "6Rnd_45ACP_Cylinder";
 			_player addWeapon "hgun_Pistol_heavy_02_F";
-			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
-			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
-			_player addItemtoBackpack "SatchelCharge_Remote_Mag";
-			_player addMagazine "6Rnd_45ACP_Cylinder";
-			_player addMagazine "6Rnd_45ACP_Cylinder";
-			_player addMagazine "6Rnd_45ACP_Cylinder";
 			_player addHeadgear "H_ShemagOpen_tan";
 			};
 			
@@ -112,7 +112,6 @@
 			removeAllWeapons _player;
 			_player addVest "V_Chestrig_khk";
 			_player addBackpack "B_Kitbag_cbr";
-			_player addWeapon "arifle_MXC_F";
 			_player forceAddUniform "U_OrestesBody";
 			_player addPrimaryWeaponItem "optic_Holosight";
 			_player addItemtoBackpack "DemoCharge_Remote_Mag";
@@ -128,6 +127,7 @@
 			_player addItemtoBackpack "SLAMDirectionalMine_Wire_Mag";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
+			_player addWeapon "arifle_MXC_F";
 			};
 			
 			
@@ -137,9 +137,8 @@
 			removeAllWeapons _player;
 			_player addVest "V_PlateCarrier1_blk";
 			_player addBackpack "B_AssaultPack_blk";
-			_player addWeapon "MMG_02_black_F";
 			_player forceAddUniform "U_B_PilotCoveralls";
-			_player addPrimaryWeaponItem "optic_Aco";
+			_player addPrimaryWeaponItem "optic_aco_smg";
 			_player addPrimaryWeaponItem "bipod_01_F_blk";
 			_player addItem "SmokeShellYellow";
 			_player addItem "SmokeShellYellow";
@@ -148,6 +147,7 @@
 			_player addItem "FirstAidKit";
 			_player addItem "FirstAidKit";
 			_player addMagazine "130Rnd_338_Mag";
+			_player addWeapon "MMG_02_black_F";
 			_player addHeadgear "H_PilotHelmetFighter_B";
 			};
 			
