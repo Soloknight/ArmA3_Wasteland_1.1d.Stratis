@@ -22,7 +22,8 @@ switch (true) do
 	};
 };
 
-if(tawvd_syncObject) then {
+/* if(tawvd_syncObject) then {
 	setObjectViewDistance [_dist,100];
 	tawvd_object = _dist;
 };
+*/
