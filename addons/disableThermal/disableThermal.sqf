@@ -36,7 +36,6 @@ if (currentVisionMode player == 2) then																		// check for TI Mode
 			setViewDistance -1;																				// reset viewdistance to default
 		}
 	};	
+		sleep 1;
 };	
-	
-	sleep 1;
 };
