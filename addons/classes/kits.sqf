@@ -24,12 +24,13 @@
 			removeBackpack _player;
 			removeAllWeapons _player;
 			_player addBackpack "B_FieldPack_blk";
-			_player addPrimaryWeaponItem "muzzle_snds_M";
+
 			_player addMagazine "1Rnd_HE_Grenade_shell";
 			_player addMagazine "1Rnd_HE_Grenade_shell";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			_player addWeapon "arifle_MX_GL_Black_Hamr_pointer_F";
+			_player addPrimaryWeaponItem "muzzle_snds_M";
 			_player addItem "APERSBoundingMine_Range_Mag";
 			_player addItem "APERSBoundingMine_Range_Mag";
 			_player addWeapon "hgun_ACPC2_snds_F";
@@ -113,7 +114,7 @@
 			_player addVest "V_Chestrig_khk";
 			_player addBackpack "B_Kitbag_cbr";
 			_player forceAddUniform "U_OrestesBody";
-			_player addPrimaryWeaponItem "optic_Holosight";
+
 			_player addItemtoBackpack "DemoCharge_Remote_Mag";
 			_player addItemtoBackpack "DemoCharge_Remote_Mag";
 			_player addItem "MiniGrenade";
@@ -128,6 +129,7 @@
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			_player addMagazine "30Rnd_65x39_caseless_mag";
 			_player addWeapon "arifle_MXC_F";
+			_player addPrimaryWeaponItem "optic_Holosight";
 			};
 			
 			
@@ -138,8 +140,6 @@
 			_player addVest "V_PlateCarrier1_blk";
 			_player addBackpack "B_AssaultPack_blk";
 			_player forceAddUniform "U_B_PilotCoveralls";
-			_player addPrimaryWeaponItem "optic_aco_smg";
-			_player addPrimaryWeaponItem "bipod_01_F_blk";
 			_player addItem "SmokeShellYellow";
 			_player addItem "SmokeShellYellow";
 			_player addItem "SmokeShellYellow";
@@ -148,6 +148,8 @@
 			_player addItem "FirstAidKit";
 			_player addMagazine "130Rnd_338_Mag";
 			_player addWeapon "MMG_02_black_F";
+			_player addPrimaryWeaponItem "optic_aco_smg";
+			_player addPrimaryWeaponItem "bipod_01_F_blk";
 			_player addHeadgear "H_PilotHelmetFighter_B";
 			};
 			
