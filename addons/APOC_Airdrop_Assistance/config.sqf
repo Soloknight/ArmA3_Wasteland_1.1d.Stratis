@@ -10,7 +10,7 @@ APOC_AA_VehOptions =
 ["Offroad HMG", 		"B_G_Offroad_01_armed_F",	8000, 	"vehicle"],
 ["Boxer Fuel",	 		"C_Van_01_fuel_F", 			10000, 	"vehicle"],
 ["Repair Offroad",	 	"C_Offroad_01_repair_F", 	10000, 	"vehicle"],
-["Hunter HMG .50", 		"B_MRAP_01_hmg_F", 			15000, 	"vehicle"],
+["Hunter HMG .50", 		"B_MRAP_01_hmg_F", 			25000, 	"vehicle"],
 ["HEMTT Ammo Truck", 	"B_Truck_01_ammo_F", 		50000, 	"vehicle"],
 ["AFV-4 Gorgon", 		"I_APC_Wheeled_03_cannon_F",60000, 	"vehicle"],
 ["IFV-6a Cheetah AA", 	"B_APC_Tracked_01_AA_F",	80000, 	"vehicle"],
