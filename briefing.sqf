@@ -18,6 +18,7 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [Fixed] Airdrop fixes
 <br/> [Fixed] Players now spawn with loaded guns
 <br/> [Added] Owned vehicles will be locked on restarts
 <br/> [Added] Slit Throat ( live and wounded players )
