@@ -18,6 +18,8 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [Fixed] Thermal Balance
+<br/> [Fixed] Backend Performance Optimizations
 <br/> [Fixed] Airdrop fixes
 <br/> [Fixed] Players now spawn with loaded guns
 <br/> [Added] Owned vehicles will be locked on restarts
