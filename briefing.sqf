@@ -18,6 +18,11 @@ player createDiaryRecord ["changelog",
 [
 "Latest Updates",
 "
+<br/> [Added] Effects toggle on Player Menu (small FPS boost)
+<br/> [Removed] Slit throat for further testing
+<br/> [Changed] Corpse and Item Cleanup for optimized
+<br/> [Changed] Airdrop to the original system - better performance
+<br/> [Changed] Attack Helis can no longer airlift
 <br/> [Fixed] Thermal Balance
 <br/> [Fixed] Backend Performance Optimizations
 <br/> [Fixed] Airdrop fixes
@@ -30,30 +35,6 @@ player createDiaryRecord ["changelog",
 <br/> [Added] Limited Thermals
 <br/> [Added] UAV Control Restrictions (Owner)
 <br/> [Added] Town spawn Cooldown
-<br/> [Adjusted] UAV Prices in line with economy
-<br/> [Adjusted] Launcher Prices in line with economy
-<br/> [Added] Hazmat Scientist Class
-<br/> [Added] Toxic Grenades
-<br/> [Adjusted] Hide Body to $1,000
-<br/> [New] UI Status bar
-<br/> [Adjusted] Aidrop Spawn locations
-<br/> [Added] Revamped Airdrop 
-<br/> [Added] Streamlined UI and server Cleanup
-<br/> [Added] Video settings action moved to player menu
-<br/> [Added] High Value Target Bounty !
-<br/> [Added] Minor fixes and performance improvements
-<br/> [Added] GID Object system 
-<br/> [Added] Added DLC Weapons
-<br/> [Added] Improved Server Cleanup
-<br/> [Added] License Vehicle 
-<br/> [Reduced] Concurrent active missions to 4
-<br/> [Removed] Food/Water/Repair Kit at spawn
-<br/> [Removed] Insurgent Easter Egg
-<br/> [Removed] Crappy vehicle textures
-<br/> [Added] Vehicle actions
-<br/> [Removed] 3D Markers - double click on the map
-<br/> [Added] Explosive Specialist Class
-<br/> [Added] Insurgent Class
 
 "
 ]];
