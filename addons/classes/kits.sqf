@@ -62,6 +62,7 @@
 			_player addItem "FirstAidKit";
 			_player addHeadgear "H_Beret_Colonel";
 			_player  addGoggles "G_Spectacles_Tinted";
+			_player setObjectTextureGlobal  [0, "client\images\vehicleTextures\digicamo.jpg"]; 
 			};
 			
 		case (["_engineer_", typeOf _player] call fn_findString != -1):
