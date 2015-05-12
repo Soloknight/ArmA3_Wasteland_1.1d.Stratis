@@ -30,7 +30,17 @@ R3F_LOG_CFG_objets_remorquables =
  */
 R3F_LOG_CFG_heliporteurs =
 [
-	"Helicopter_Base_F"
+	"O_Heli_Light_02_unarmed_F",
+	"I_Heli_light_03_unarmed_F",
+	"B_Heli_Transport_01_F",
+	"B_Heli_Transport_01_camo_F",
+	"O_Heli_Light_02_F",
+	"O_Heli_Light_02_v2_F",
+	"I_Heli_light_03_F",
+	"I_Heli_Transport_02_F",
+    "Heli_Transport_04_base_F",
+	"B_Heli_Transport_03_unarmed_F",
+	"B_Heli_Transport_03_F"
 ];
 
 /**
