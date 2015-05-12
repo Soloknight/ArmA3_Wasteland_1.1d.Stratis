@@ -52,6 +52,8 @@ unitHandleDamage = "client\functions\unitHandleDamage.sqf" call mf_compile;
 updateTerritoryMarkers = "territory\client\updateTerritoryMarkers.sqf" call mf_compile;
 vehicleSideCfg = "client\functions\vehicleSideCfg.sqf" call mf_compile;
 weaponDisassembledEvent = "client\functions\weaponDisassembledEvent.sqf" call mf_compile;
+fn_dropbox = "client\functions\fn_dropbox.sqf" call mf_compile;
+fn_processBox = "client\functions\fn_processBox.sqf" call mf_compile;
 
 
 // Player details and actions
@@ -62,7 +64,7 @@ playerSetupStart = "client\functions\playerSetupStart.sqf" call mf_compile;
 playerSetupGear = "client\functions\playerSetupGear.sqf" call mf_compile;
 playerSetupEnd = "client\functions\playerSetupEnd.sqf" call mf_compile;
 kits = "addons\classes\kits.sqf" call mf_compile;
-// applyPlayerTexture = "addons\supporters\applyPlayertexture.sqf" call mf_compile;
+// applyPlayerTexture = "addons\classes\applyPlayertexture.sqf" call mf_compile;
 spawnAction = "client\functions\spawnAction.sqf" call mf_compile;
 spawnInTown = "client\functions\spawnInTown.sqf" call mf_compile;
 spawnOnBeacon = "client\functions\spawnOnBeacon.sqf" call mf_compile;

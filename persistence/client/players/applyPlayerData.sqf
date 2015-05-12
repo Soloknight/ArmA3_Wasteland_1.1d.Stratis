@@ -141,7 +141,13 @@ removeHeadgear player;
 		case "WastelandItems": { { [_x select 0, _x select 1, true] call mf_inventory_add } forEach _value };
 	};
 	
-//load supporter clothing
-// _this call applyPlayerTexture;
+//load custom clothing on relog
+switch (true) do {
+		case (["_medic_", typeOf player] call fn_findString != -1):
+		{
+			player setObjectTextureGlobal  [0, "client\images\vehicleTextures\digicamo.jpg"];
+		};
+				};
+
 
 } forEach _data;
