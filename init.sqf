@@ -71,9 +71,10 @@ if (isServer) then
 
 //init 3rd Party Scripts
 // set takedown params and init
-zod_stakedown_showhint = true;
-zod_stakedown_showtext = true;
-[] execVM "addons\takedown\zod_stakedown_init.sqf"; //takedown
+//zod_stakedown_showhint = true;
+//zod_stakedown_showtext = true;
+//[] execVM "addons\takedown\zod_stakedown_init.sqf"; //Slit Throat
+
 [] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "addons\proving_ground\init.sqf";
 [] execVM "addons\scripts\DynamicWeatherEffects.sqf";
@@ -84,8 +85,7 @@ zod_stakedown_showtext = true;
 [] execVM "addons\safezone\safezone.sqf"; //safezones
 [] execVM "addons\vactions\functions.sqf"; //vehicle actions
 [] execVM "addons\HvT\HvT.sqf"; // High Value Target
-[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
+
 [] execVM "addons\ToxicGas\toxic_gas.sqf"; // teargass bitches !
-if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"};
-// nul = [] execVM "addons\3Dmarkers\3Dmarkers.sqf"; // 3dmarkers removed for now
-if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; // GID
+if(hasInterface) then{[] execVM "addons\statusBar\statusbar.sqf"}; // Epoch StatusBar
+if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; // GID Positioning System
