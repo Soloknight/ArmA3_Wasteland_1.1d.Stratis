@@ -13,7 +13,7 @@ setViewDistance 1200;
 setObjectViewDistance 900;
 setTerrainGrid 45;
 
-
+[] execVM "addons\welcomeMessage\disclaimer.sqf";
 [] execVM "addons\welcomeMessage\welcomeMessage.sqf";
  
 player addEventHandler ["Take",
