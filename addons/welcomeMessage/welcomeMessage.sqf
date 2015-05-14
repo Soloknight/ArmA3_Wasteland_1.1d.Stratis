@@ -9,7 +9,7 @@
 	];
 	*/
 	
-sleep 10;
+sleep 30;
 	
 _text = "
 <t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#ff0000'>GamersInc. Wasteland Stratis</t></t>
